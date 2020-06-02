@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="/Users/itszb/IdeaProjects/autoTest(failed)">
+    <classes>
+      <class name="org.testing.gacha.Case.login">
+        <methods>
+          <include name="login"/>
+          <include name="plus"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.testing.gacha.Case.login -->
+    </classes>
+  </test> <!-- /Users/itszb/IdeaProjects/autoTest(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

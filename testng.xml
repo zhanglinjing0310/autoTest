@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <!--listener 不使用默认产生报告的监听器配置，自己写明一个产生报告的监听器-->
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="/Users/itszb/IdeaProjects/autoTest">
+        <classes>
+            <class name="org.testing.gacha.Case.befClass">
+            </class>
+            <class name="org.testing.gacha.Case.login">
+            </class>
+           <!--<class name="org.testing.gacha.Case.other">
+            </class>
+            <class name="org.testing.gacha.Case.eggRing">
+            </class>
+            <class name="org.testing.gacha.Case.yifan">
+            </class>-->
+
+        </classes>
+    </test>
+
+
+
+
+
+
+</suite>

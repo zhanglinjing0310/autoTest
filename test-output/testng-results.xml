@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-06-02T08:25:45Z" name="All Test Suite" finished-at="2020-06-02T08:26:55Z" duration-ms="69854">
+    <groups>
+    </groups>
+    <test started-at="2020-06-02T08:25:45Z" name="/Users/itszb/IdeaProjects/autoTest" finished-at="2020-06-02T08:26:55Z" duration-ms="69854">
+      <class name="org.testing.gacha.Case.befClass">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.testing.gacha.Case.befClass@15ca7889]" started-at="2020-06-02T16:25:45Z" name="setup" finished-at="2020-06-02T16:26:05Z" duration-ms="19809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testing.gacha.Case.befClass@15ca7889]" started-at="2020-06-02T16:26:54Z" name="tearDown" finished-at="2020-06-02T16:26:55Z" duration-ms="995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.testing.gacha.Case.befClass -->
+      <class name="org.testing.gacha.Case.login">
+        <test-method signature="plus()[pri:1, instance:org.testing.gacha.Case.login@7a675056]" started-at="2020-06-02T16:26:05Z" name="plus" finished-at="2020-06-02T16:26:25Z" duration-ms="20425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- plus -->
+        <test-method signature="login()[pri:2, instance:org.testing.gacha.Case.login@7a675056]" started-at="2020-06-02T16:26:25Z" name="login" finished-at="2020-06-02T16:26:54Z" duration-ms="28581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- org.testing.gacha.Case.login -->
+    </test> <!-- /Users/itszb/IdeaProjects/autoTest -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
