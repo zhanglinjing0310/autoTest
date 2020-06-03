@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="/Users/itszb/IdeaProjects/autoTest"
+           tests="2"
+           failures="1"
+           errors="0"
+           skipped="1"
+           time="0.841">
+  <properties />
+            <testcase name="setup" time="0.841" classname="org.testing.gacha.Case.befClass">
+                <failure type="org.openqa.selenium.WebDriverException"
+                  message="Connection refused (Connection refused)
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;localhost&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;11.0.4&apos;
+Driver info: driver.version: AndroidDriver"
+              >
+<![CDATA[org.openqa.selenium.WebDriverException: Connection refused (Connection refused)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '11.0.4'
+Driver info: driver.version: AndroidDriver
+  io.appium.java_client.remote.AppiumCommandExecutor.lambda$2(AppiumCommandExecutor.java:243)
+  java.base/java.util.Optional.orElseGet(Optional.java:369)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:242)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+  io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
+  io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
+  io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
+  io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
+  org.testing.gacha.Case.befClass.setup(befClass.java:66)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base/java.lang.reflect.Method.invoke(Method.java:566)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:451)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+  org.testng.TestRunner.beforeRun(TestRunner.java:529)
+  org.testng.TestRunner.run(TestRunner.java:497)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+  org.testng.SuiteRunner.run(SuiteRunner.java:364)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+  org.testng.TestNG.runSuites(TestNG.java:1028)
+  org.testng.TestNG.run(TestNG.java:996)
+  org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+  org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+  java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+  java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+  java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+  java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+  java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+  java.base/java.net.Socket.connect(Socket.java:591)
+  okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
+  okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
+  okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
+  okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
+  okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
+  okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
+  okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+  okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+  okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+  okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+  okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+  okhttp3.RealCall.execute(RealCall.java:77)
+  org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+  org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base/java.lang.reflect.Method.invoke(Method.java:566)
+  io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
+  io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+  io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
+  io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
+  io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
+  io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
+  org.testing.gacha.Case.befClass.setup(befClass.java:66)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base/java.lang.reflect.Method.invoke(Method.java:566)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:451)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+  org.testng.TestRunner.beforeRun(TestRunner.java:529)
+  org.testng.TestRunner.run(TestRunner.java:497)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+  org.testng.SuiteRunner.run(SuiteRunner.java:364)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+  org.testng.TestNG.runSuites(TestNG.java:1028)
+  org.testng.TestNG.run(TestNG.java:996)
+  org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+  org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+      </failure>
+
+          </testcase>
+  
+            <testcase name="tearDown" time="0.0" classname="org.testing.gacha.Case.befClass">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>
