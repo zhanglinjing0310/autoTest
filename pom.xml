@@ -29,6 +29,13 @@
             <artifactId>reportng</artifactId>
             <version>1.1.4</version>
             <scope>test</scope>
+            <!-- 排除testNG依赖 -->
+            <exclusions>
+                <exclusion>
+                    <groupId>org.testng</groupId>
+                    <artifactId>testng</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- Junit -->
@@ -44,6 +51,7 @@
             <groupId>com.google.inject</groupId>
             <artifactId>guice</artifactId>
             <version>4.1.0</version>
+            <scope>test</scope>
         </dependency>
 
         <!-- appium-java -->
@@ -65,7 +73,6 @@
             <artifactId>java-client</artifactId>
             <version>6.1.0</version>
         </dependency>
-
     </dependencies>
 
     <properties>
@@ -83,6 +90,7 @@
                     <!-- testNg 执行出错仍然继续执行 -->
                     <!--<testFailureIgnore>true</testFailureIgnore>-->
                     <!-- testNg 相关的 xml 配置文件 -->
+                    <!--<skipTests>false</skipTests>-->
                     <suiteXmlFiles>
                         <!-- 指定使用的 testNg.xml 位置 -->
                         <suiteXmlFile>testng.xml</suiteXmlFile>
@@ -105,6 +113,8 @@
                             <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>
                         </property>
                     </properties>
+                    <workingDirectory>target/</workingDirectory>
+                    <forkMode>always</forkMode>
                     <!-- 编码设置，否则生成报告乱码 -->
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                     <!--正确加载html,这里主要加载图片-->
@@ -113,16 +123,15 @@
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <source>8</source>
                     <target>8</target>
                 </configuration>
-            </plugin>
+            </plugin>-->
         </plugins>
-        <defaultGoal>compile</defaultGoal>
     </build>
 
 
